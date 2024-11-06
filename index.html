@@ -6,29 +6,93 @@
     <title>YOUNG SCIENTIST</title>
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header></header>
-    <!-- Main -->
-    <main>
-        <div class="sideimage"></div>
-        <div class="body">
-            <div class="herobanner"></div>
-            <div class="recentmessages"></div>
-            <div class="rectangle"></div>
-            <div class="recentnews">
-                <div class="newscontainer">
-                    <div class="image"></div>
-                </div>
-                <div class="newscontainer"></div>
-            </div>
+    <header>
+        <!-- Logo -->
+        <div class="logoBox">
+            <div class="logoText"><h1>YOUNG SCIENTIST</h1></div>
+            <div class="logoLine"></div>
         </div>
-        <div class="sideimage"></div>
+        <!-- Links -->
+        <div class="links">
+            <a href="" class="headerLinks">NEWS</a>
+            <a href="" class="headerLinks">MESSAGES</a>
+        </div>
+        <!-- Icons -->
+        <div class="icons">
+            <i class="fa-solid fa-bell headerIcons"></i>
+            <i class="fa-solid fa-bars headerIcons"></i>
+        </div>
+    </header>
+    <main>
+        <!-- Side image -->
+        <div class="sideImage"></div> <!-- !!! Needs to be first !!! -->
+        <div class="notSideImage">
+            <!-- Herobanner -->
+            <div class="herobanner"></div>
+            <div class="afterHr">
+                <!-- Recent messages -->
+                <div class="recentMessages">
+                    <!-- Recent messages - Left box -->
+                    <div class="rmLeftBox">
+                        <h1>Recent messages</h1><br>
+                        <div class="rmFriends">
+                            <i class="fa-solid fa-user rmUser"></i>
+                            <p class="rmFtxt"># Friends name</p>
+                            <p># Recent message</p>
+                        </div>
+                        <div class="rmFriends">
+                            <i class="fa-solid fa-user rmUser"></i>
+                            <p class="rmFtxt"># Friends name</p>
+                            <p># Recent message</p>
+                        </div>
+                        <div class="rmFriends">
+                            <i class="fa-solid fa-user rmUser"></i>
+                            <p class="rmFtxt"># Friends name</p>
+                            <p># Recent message</p>
+                        </div>
+                    </div>
+                    <!-- Recent messages - Right box -->
+                    <div class="rmRightBox">
+                        <div class="rmButton"><a href="" class="rmButtonLink">Replay to messages</a></div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Recent news -->
+                <div class="recentNews1">
+                    <div class="recentNewsBox">
+                        <div class="recentNBimage rcImage1 rcImages"></div>
+                        <div class="recentNBtext"><h2>News title</h2></div>
+                    </div>
+                    <div class="recentNewsBox">
+                        <div class="recentNBimage rcImage2 rcImages"></div>
+                        <div class="recentNBtext"><h2>News title</h2></div>
+                    </div>
+                </div>
+                <div class="recentNews2">
+                        <div class="recentNewsBox">
+                            <div class="recentNBimage rcImage3 rcImages"></div>
+                            <div class="recentNBtext"><h2>News title</h2></div>
+                        </div>
+                        <div class="recentNewsBox">
+                            <div class="recentNBimage rcImage4 rcImages"></div>
+                            <div class="recentNBtext"><h2>News title</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Side image -->
+        <div class="sideImage"></div> <!-- !!! Needs to be last !!! -->
     </main>
-    <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="footerContact">
+            <p class="footerContactTxt">Contact us</p>
+            <i class="fa-brands fa-instagram footerIcons"></i>
+            <i class="fa-brands fa-x-twitter footerIcons"></i>
+        </div>
+    </footer>
     <!-- Script -->
     <script src="script.js"></script>
 </body>

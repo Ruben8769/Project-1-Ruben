@@ -1,0 +1,84 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Colors */
+:root{
+    --primary-color: #1C5D73;
+    --secondary-color: #1B723E;
+    --third-color: #4C5B6B;
+}
+
+/* Styling */
+body{margin: 0;background-color: var(--primary-color);}
+
+a{text-decoration: none;color: #000;font-family: Roboto Mono, 'Seoge UI';font-size: 24px;font-weight: 500;margin-left: 2vw;}
+h1, h2, p{font-family: Roboto Mono, 'Seoge UI';margin: 0px;}
+
+h1{font-size: 24px;font-weight: 700;}
+h2{font-size: 20px;font-weight: 600;}
+p{font-size: 16px;font-weight: 400;}
+
+a:hover{text-decoration: underline;}
+
+/* Header */
+header{
+    height: 60px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+}
+
+/* Header - Logo */
+.logoBox{display: flex;flex-direction: column;margin-left: 1.5vw;}
+.logoText{display: flex;align-items: center;height: 100%;}
+.logoLine{background-color: var(--primary-color);height: 3px;width: 230px;margin-top: -14px;}
+
+/* Header - Links */
+.links{align-content: center;width: 79vw;}
+
+/* Header - Icons */
+.icons{
+    height: 100%;
+    width: 7vw;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.headerIcons{font-size: 30px;}
+
+/* Main */
+main{height: 100vh;width: 100%;display: flex;}
+.notSideImage{width: 86vw;height: 100%;}
+
+/* Main - Side image */
+.sideImage, .sideImage{
+    width: 7vw;height: 100%;
+    background-image: url(../img/SidePicture.png);
+    background-size: cover;
+}
+
+/* Footer */
+footer{
+    margin: 0;
+    height: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer - Text */
+.footerContact{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContactTxt{margin: 0px;font-size: 15px;}
+.footerIcons{margin: 0px;height: 90%;}

@@ -1,95 +1,138 @@
-/* Color */
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Colors */
 :root{
     --primary-color: #1C5D73;
-    --secondary-color: #4C5B6B;
-    --third-color: #1B723E;
-    --placeholder-color: #a11a1a;
+    --secondary-color: #1B723E;
+    --third-color: #4C5B6B;
+    --third-color-transparent: #4c5b6bbf;
 }
 
-/* Style */
-body{
-    margin: 0;
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-}
+/* Styling */
+body{margin: 0;background-color: var(--primary-color);}
 
+a{text-decoration: none;color: #000;font-family: Roboto Mono, 'Seoge UI';font-size: 16px;}
+.headerLinks{margin-left: 2vw;font-size: 24px;}
+
+h1, h2, p{font-family: Roboto Mono, 'Seoge UI';margin: 0px;}
+
+h1{font-size: 24px;font-weight: 700;}
+h2{font-size: 20px;font-weight: 600;}
+p{font-size: 16px;font-weight: 400;}
+
+a:hover{text-decoration: underline;}
+button:hover{cursor: pointer;}
+
+hr{height: 10px;background-color: var(--secondary-color);border: none;border-radius: 5px;margin: 40px 0 40px;}
+
+/* Header */
 header{
-    background-color: var(--third-color);
     height: 60px;
     width: 100%;
-}
-
-main{
+    background-color: var(--secondary-color);
     display: flex;
 }
 
-footer{
-    background-color: var(--third-color);
-    height: 20px;
-    width: 100%;
+/* Header - Logo */
+.logoBox{display: flex;flex-direction: column;margin-left: 1.5vw;}
+.logoText{display: flex;align-items: center;height: 100%;}
+.logoLine{background-color: var(--primary-color);height: 3px;width: 230px;margin-top: -14px;}
+
+/* Header - Links */
+.links{align-content: center;width: 79vw;}
+
+/* Header - Icons */
+.icons{
+    height: 100%;
+    width: 7vw;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
+
+.headerIcons{font-size: 30px;}
 
 /* Main */
-.sideimage{
-    min-height: 100vh;
-    width: 10%;
+main{min-height: 100vh;width: 100%;display: flex;}
+.notSideImage{width: 86vw;height: 100%;}
+
+/* Main - Side image */
+.sideImage{
+    width: 7vw;min-height: 100vh;
     background-image: url(../img/SidePicture.png);
+    background-size: cover;
 }
 
-.body{
-    margin: 25px;
-    height: 100vh;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Main - Herobanner */
 .herobanner{
-    border-radius: 5px;
-    background-color: var(--placeholder-color);
-    width: 99%;
-    height: 228px;
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/Herobanner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.recentmessages{
-    margin-top: 25px;
-    background-color: var(--placeholder-color);
-    width: 99%;
-    height: 500px;
-}
+/* Main - Margin to everything */
+.afterHr{margin: 30px;}
 
-.rectangle{
-    background-color: var(--third-color);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 99%;
-    height: 10px;
-    border-radius: 5px;
-}
+/* Main - Recent messages - Left box */
+.recentMessages{ width: 100%;display: flex;}
+.rmLeftBox{width: 80%;}
 
-/* Recent news */
-.recentnews{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--placeholder-color);
-    width: 99%;
-    height: 700px;
-}
+.rmFriends{display: flex;gap: 25px;width: 50%;margin: 0 0 20px;}
+.rmFtxt{font-weight: 700;}
+.rmUser{font-size: 125%;}
 
-.newscontainer{
-    align-items: center;
-    margin: 10px;
+/* Main - Recent messages - Right box */
+.rmRightBox{width: 20%;display: flex;align-items: center;justify-content: end;}
+.rmButton{
     background-color: var(--secondary-color);
-    width: 45%;
-    height: 320px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px;
 }
 
-.image{
-    background-color: var(--primary-color);
-    width: 90%;
-    height: 267px;
+/* Main - Recent news */
+.recentNews1, .recentNews2{width: 100%;display: flex;justify-content: center; gap: 10px;}
+.recentNewsBox{padding: 10px;border-radius: 5px; background-color: var(--third-color-transparent);display: flex;flex-direction: column;}
+.recentNBimage{width: 40vw;height: 40vh;border-radius: 5px;background-size: cover;background-position: center;}
+.recentNBtext{width: 40vw}
+.rcImages{background-size: cover;background-position: center;}
+.recentNews2{margin: 10px 0 0 0;}
+
+/* Main - Recent news - Applying different image urls */
+.rcImage1{background-image: url(../img/Picture1.png);}
+.rcImage2{background-image: url(../img/Picture2.png);}
+.rcImage3{background-image: url(../img/Picture3.png);}
+.rcImage4{background-image: url(../img/Picture4.png);}
+
+/* Footer */
+footer{
+    margin: 0;
+    height: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Footer - Text */
+.footerContact{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContactTxt{margin: 0px;font-size: 15px;}
+.footerIcons{margin: 0px;height: 90%;}
