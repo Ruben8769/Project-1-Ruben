@@ -76,7 +76,21 @@ main{width: 100%;min-height: 100vh;display: flex;justify-content: center;}
 }
 
 /* Main - Not Side Image */
-.notSideImage{width: 80vw;height: 100vh;display: flex;}
+.notSideImage{width: 80vw;height: 100vh;display: flex;flex-direction: column;}
+
+/* Main - Herobanner */
+.herobanner{width: 100%;height: 40vh;background-image: url(/img/Herobanner.jpg);background-position: center;background-size: cover;}
+
+/* Main - Not Herobanner */
+.notHerobanner{width: 100%;margin: 25px;}
+
+/* Main - Recent Friends */
+.recentFriends, .recentFriendsTitle, .recentFriendsBox{width: 100%;}
+.recentFriendsProfiles, .recentFriendsButtons{width: 50%;}
+.recentFriendsProfile{display: flex; gap: 2vw;justify-content: center;align-items: center;}
+
+
+
 
 /* Footer - Styling */
 footer{width: 100%;height: 3vh;display: flex;justify-items: center;align-items: center;}
