@@ -1,4 +1,4 @@
-/* Importing fonts */
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 /* Color */
@@ -8,6 +8,7 @@
     --third-color: #4C5B6B;
     --link-color: #0084FF;
     --for-backdrop-images: #4c5b6bc3;
+    --button-hover-color: #1a6e3c;
 }
 
 /* Style */
@@ -20,6 +21,19 @@ header, footer{background-color: var(--secondary-color);}
 h1{font-weight: 700;font-size: 32px;}
 h2{font-weight: 500;font-size: 26px;}
 p{font-family: 400;font-size: 21px;}
+
+#rFB:hover{cursor: pointer;background-color: var(--button-hover-color);}
+#rFB{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-family: Roboto Mono, 'Seoge UI';
+    width: 200px;
+    height: 30px;
+    box-shadow: 3px 3px 5px #000000bb;
+}
+
+hr{background-color: var(--secondary-color);height: 10px;border: none;border-radius: 5px;margin: 40px 0 40px;}
 
 body{margin: 0;min-height: 100vh;background-color: var(--primary-color);}
 
@@ -40,8 +54,6 @@ header{width: 100%;height: 8vh;display: flex;}
 /* Header - Links */
 .headerText{font-size: 32px;}
 .links{
-    width: 40vw;
-    height: 100%;
     display: flex;
     align-items: center;
     width: 100%;
@@ -68,7 +80,7 @@ main{width: 100%;min-height: 100vh;display: flex;justify-content: center;}
 
 /* Main - Side Image */
 .sideImage{
-    width: 10vw;height: 100vh;
+    width: 10vw;min-height: 100vh;
     background-image: url(../img/SidePicture.png);
     background-size: cover;
     background-position: center;
@@ -82,13 +94,34 @@ main{width: 100%;min-height: 100vh;display: flex;justify-content: center;}
 .herobanner{width: 100%;height: 40vh;background-image: url(/img/Herobanner.jpg);background-position: center;background-size: cover;}
 
 /* Main - Not Herobanner */
-.notHerobanner{width: 100%;margin: 25px;}
+.notHerobanner{padding: 25px;}
 
 /* Main - Recent Friends */
-.recentFriends, .recentFriendsTitle, .recentFriendsBox{width: 100%;}
-.recentFriendsProfiles, .recentFriendsButtons{width: 50%;}
-.recentFriendsProfile{display: flex; gap: 2vw;justify-content: center;align-items: center;}
+.recentFriends, .recentFriendsBox{width: 100%;}
+.recentFriendsProfiles, .recentFriendsButton{width: 50%;}
+.recentFriendsBox{display: flex;}
 
+/* Main - Recent Friends - Profiles */
+.recentFriendsProfile{display: flex; gap: 2vw;margin-top: 10px;}
+.recentFriendProfileText{font-weight: 700;}
+.recentFriendProfileIcon{font-size: 3vh;}
+
+/* Main - Recent Friends - Button */
+.recentFriendsButton{display: flex;align-items: center;justify-content: end;margin-right: 8vw;}
+
+/* Main - Recent News */
+.recentNews{width: 100%;}
+.recentNewsContainer{width: 50%;background-color: var(--for-backdrop-images);border-radius: 5px;padding: 10px;}
+.recentNewsBox1, .recentNewsBox2{display: flex;justify-content: center;gap: 13vw;margin: 0 0 10px;}
+
+.recentNewsContainerImage{width: 100%;height: 40vh;background-size: cover;background-position: center;}
+
+
+/* Applying Images */
+.newsImage1{background-image: url(/img/Picture1.png);}
+.newsImage2{background-image: url(/img/Picture2.png);}
+.newsImage3{background-image: url(/img/Picture3.png);}
+.newsImage4{background-image: url(/img/Picture4.png);}
 
 
 
