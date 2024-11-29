@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Young Scientist Template</title>
+    <title>Young Scientist Login</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginPage.css">
 </head>
 <body>
     <!-- Header -->
@@ -30,7 +30,23 @@
     <!-- Main -->
     <main>
         <div class="sideImage"></div> <!-- !!! Needs To Be First !!! -->
-        <div class="notSideImage"><div style="height: 200vh;width: 20vw;background-color: #fff;"></div></div>
+        <div class="notSideImage">
+            <!-- Sign Up Box -->
+            <div class="signInBox">
+                <form action="loginNow" class="signInForm">
+                    <!-- Email -->
+                    <label for="email"><h2>Email</h2></label>
+                    <input type="email" id="email" placeholder="Write here..." size="30">
+                    <!-- Password -->
+                    <label for="password"><h2>Password</h2></label>
+                    <input type="password" id="password" placeholder="Write here..." size="30">
+                    <!-- Submit -->
+                    <input type="submit" id="submit" value="Sign in">
+                    <p>Don't have an account? <a href="">Sign up</a></p>
+                    <p>Forgot password <a href="">Click here</a></p>
+                </form>
+            </div>
+        </div>
         <div class="sideImage"></div> <!-- !!! Needs To Be Last !!! -->
     </main>
     <!-- Footer -->
@@ -42,6 +58,6 @@
         </div>
     </footer>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="loginPage.js"></script>
 </body>
 </html>

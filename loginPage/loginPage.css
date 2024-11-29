@@ -11,7 +11,7 @@
 }
 
 /* Style */
-h1, h2, h3, p, a{font-family: Roboto Mono, 'Seoge UI';margin: 0px;}
+h1, h2, h3, p, a, .form, #submit{font-family: Roboto Mono, 'Seoge UI';margin: 0px;}
 a{text-decoration: none;color: var(--link-color);}
 header, footer{background-color: var(--secondary-color);}
 .normalLink{color: #000;}
@@ -19,7 +19,7 @@ header, footer{background-color: var(--secondary-color);}
 
 h1{font-weight: 700;font-size: 32px;}
 h2{font-weight: 500;font-size: 26px;}
-p{font-family: 400;font-size: 21px;}
+p, a, #submit, #email, #password{font-family: 400;font-size: 21px;}
 
 body{margin: 0;min-height: 100vh;background-color: var(--primary-color);}
 
@@ -77,7 +77,40 @@ main{width: 100%;min-height: 100vh;display: flex;justify-content: center;}
 }
 
 /* Main - Not Side Image */
-.notSideImage{width: 80vw;min-height: 100vh;display: flex;}
+.notSideImage{width: 80vw;display: flex;justify-content: center;}
+
+/* Sign Up Box */
+.signInBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#email, #password{
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #00000098;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #00000098;
+}
+#email, #password{background-color: var(--third-color);}
+#submit{background-color: var(--secondary-color);}
+#submit:hover{cursor: pointer;}
+
+
 
 /* Footer - Styling */
 footer{width: 100%;height: 3vh;display: flex;justify-items: center;align-items: center;}
